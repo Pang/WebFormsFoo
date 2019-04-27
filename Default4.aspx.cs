@@ -9,7 +9,16 @@ public partial class Default4 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (!this.IsPostBack)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                ListItem li = new ListItem();
+                li.Text = $"Item {i}";
+                li.Value = i.ToString();
+                lstLeft.Items.Add(li);
+            }
+        }
     }
 
     protected void btnRight_Click(object sender, EventArgs e)

@@ -20,13 +20,7 @@
             <table>
                 <tr>
                     <td>
-                        <asp:ListBox ID="lstLeft" runat="server" Height="100px" Width="100px">
-                            <asp:ListItem>One</asp:ListItem>
-                            <asp:ListItem>Two</asp:ListItem>
-                            <asp:ListItem>Three</asp:ListItem>
-                            <asp:ListItem>Four</asp:ListItem>
-                            <asp:ListItem>Five</asp:ListItem>
-                        </asp:ListBox>
+                        <asp:ListBox ID="lstLeft" runat="server" Height="100px" Width="100px"></asp:ListBox>
                     </td>
                     <td class="auto-style2">
                         <asp:Button ID="btnRight" runat="server" Text=">>" OnClick="btnRight_Click" />
